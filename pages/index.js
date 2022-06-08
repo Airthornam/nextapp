@@ -24,9 +24,10 @@ export default function Home() {
               <div
                 data-aos="zoom-in"
                 data-aos-delay="100"
+                data-aos-duration="2000"
                 className="lg:flex-grow -mt-16 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:ml-24 md:text-left mb-16 md:mb-0 items-center text-center"
               >
-                <h1 className="title-font sm:text-4xl text-4xl  md:text-5xl mt-20 mb-10 md:mt-0 md:mb-5 font-medium text-white">
+                <h1 className="title-font sm:text-4xl text-4xl  md:text-5xl  mt-32 mb-10 md:mt-0 md:mb-5 font-medium text-white">
                   Design & Development
                   <br className="lg:inline-block" />
                   Service Provider
@@ -44,10 +45,10 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="md:w-1/2 md:mt-0">
+              <div className="hidden md:block md:w-1/2 md:mt-0">
                 <Image
-                  data-aos="zoom-out"
-                  data-aos-delay="200"
+                  data-aos="zoom-out-up"
+                  data-aos-duration="3000"
                   className="object-cover object-center rounded"
                   alt="hero"
                   src="/img/hero.png"
@@ -63,7 +64,7 @@ export default function Home() {
 
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start text-left mb-16 md:mb-0 md:ml-24 items-start " data-aos="fade-up">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start text-left mb-16 md:mb-0 md:ml-24 items-start " data-aos="fade-up-right"  data-aos-duration="2000">
             <div className="flex">
               <AutoAwesomeMotionIcon className="text-herobg" />
               <h5 className="ml-4 mb-4 text-herobg font-bold">About Us</h5>
@@ -98,7 +99,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="md:w-1/2"  data-aos="zoom-in">
+          <div className="md:w-1/2"  data-aos="fade-left"   data-aos-duration="3000">
             <Image
               className=" object-center rounded"
               alt="about"
@@ -116,7 +117,7 @@ export default function Home() {
           style={{ backgroundImage: "url(/img/bg-newsletter.png)" }}
         >
           <div className="container px-5 py-20 mx-auto flex items-center justify-between">
-            <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0 md:ml-24">
+            <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0 md:ml-24" data-aos="zoom-in-right" data-aos-delay={800}  data-aos-duration="4000">
               <h1 className="title-font font-bold text-3xl text-gray-900">
                 Get To Know Project Estimate?
               </h1>
@@ -159,7 +160,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row md:justify-between sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10">
+            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10" data-aos="zoom-in" data-aos-delay={100}  data-aos-duration="1000">
               <div className="shadow-2xl w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                 <DesktopMacIcon className="w-10 h-10 text-red" />
               </div>
@@ -187,7 +188,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10">
+            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10" data-aos="zoom-in" data-aos-delay={100}  data-aos-duration="2000">
               <div className="shadow-2xl w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                 <LaptopIcon className="w-10 h-10 text-orange" />
               </div>
@@ -215,7 +216,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center" data-aos="zoom-in" data-aos-delay={100}  data-aos-duration="3000">
               <div className="shadow-2xl w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                 <WebIcon className="w-10 h-10 text-lightblue" />
               </div>
@@ -246,7 +247,7 @@ export default function Home() {
           </div>
           {/*  */}
           <div className="flex flex-col md:flex-row md:justify-between sm:-m-4 -mx-4 -mb-10 md:mt-16 mt-14 md:space-y-0 space-y-6">
-            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10">
+            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10" data-aos="zoom-in" data-aos-delay={100}  data-aos-duration="1000">
               <div className="shadow-2xl w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                 <LanguageIcon className="w-10 h-10 text-blue" />
               </div>
@@ -274,7 +275,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10">
+            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10" data-aos="zoom-in" data-aos-delay={100}  data-aos-duration="2000">
               <div className="shadow-2xl w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                 <StorageIcon className="w-10 h-10 text-green" />
               </div>
@@ -302,7 +303,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out shadow-2xl p-4 md:w-1/3 flex flex-col text-center items-center" data-aos="zoom-in" data-aos-delay={100}  data-aos-duration="3000">
               <div className="shadow-2xl w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                 <PhoneIphoneIcon className="w-10 h-10 text-yellow" />
               </div>
@@ -336,7 +337,7 @@ export default function Home() {
       {/*  */}
       <section className="text-gray-600 body-font">
         <div className="container px-5 md:px-24 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-20" data-aos="zoom-in-up" data-aos-delay={100}  data-aos-duration="1000">
             <h5 className="sm:text-3xl text-2xl md:text-lg font-bold title-font mb-4 text-gray-900">
               <AutoAwesomeMotionIcon className="text-herobg" /> Our Project
             </h5>
@@ -345,7 +346,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="flex flex-col md:flex-row md:justify-between sm:-m-4 -mx-4 -mb-10 md:mt-16 mt-14 md:space-y-0 space-y-6 m-24">
-            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10">
+            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10" data-aos="zoom-in-up" data-aos-delay={100}  data-aos-duration="1000">
               <Image
                 alt=""
                 className="object-center object-rounded"
@@ -354,7 +355,7 @@ export default function Home() {
                 height={600}
               />
             </div>
-            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10">
+            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10" data-aos="zoom-in-up" data-aos-delay={100}  data-aos-duration="2000">
               <Image
                 alt=""
                 className="object-center object-rounded"
@@ -364,7 +365,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out  p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out  p-4 md:w-1/3 flex flex-col text-center items-center" data-aos="zoom-in-up" data-aos-delay={100}  data-aos-duration="3000">
               <Image
                 alt=""
                 className="object-center object-rounded"
