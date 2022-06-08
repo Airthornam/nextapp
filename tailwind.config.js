@@ -34,6 +34,8 @@ module.exports = {
       green: '#7DDF6F',
       blue: '#2282FF',
       yellow: '#FFD04D',
+      black: '#000000',
+      scaleicons: '#FFB774'
     },
     extend: {
       scale: {

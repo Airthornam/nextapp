@@ -1,10 +1,8 @@
+
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import style from "./index.module.css";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import AutoAwesomeMotionIcon from "@mui/icons-material/AutoAwesomeMotion";
 import CheckIcon from "@mui/icons-material/Check";
 import WebIcon from "@mui/icons-material/Web";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -12,59 +10,13 @@ import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import LaptopIcon from "@mui/icons-material/Laptop";
 import DesktopMacIcon from "@mui/icons-material/DesktopMac";
 import StorageIcon from "@mui/icons-material/Storage";
+import AutoAwesomeMotionIcon from "@mui/icons-material/AutoAwesomeMotion";
 
 export default function Home() {
   return (
     <>
-      <header className="bg-white z-10 text-herobg body-font sticky top-0">
-        <div className="container mx-auto flex flex-wrap py-2 px-0 md:px-5  flex-row items-center justify-between">
-          <Link href="/">
-            <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-10 h-10 text-herobg p-2 bg-indigo-500 rounded-full"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-              <span className="ml-3 text-xl">AETOR-TECH</span>
-            </a>
-          </Link>
-          <nav className="hidden md:block md:ml-auto flex-wrap items-center text-base justify-between">
-            <Link href="/">
-              <a className="mr-5 uppercase hover:text-secondary">Home</a>
-            </Link>
-            <Link href="/about">
-              <a className="mr-5 uppercase hover:text-secondary">About</a>
-            </Link>
-            <Link href="/services">
-              <a className="mr-5 uppercase hover:text-secondary">Services</a>
-            </Link>
-            <Link href="/portfolio">
-              <a className="mr-5  uppercase hover:text-secondary">Portfolio</a>
-            </Link>
-            <Link href="/contact">
-              <a className="mr-5 uppercase hover:text-secondary">Contact</a>
-            </Link>
-          </nav>
-          <div className="md:hidden -mt-2">
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-            >
-              <MenuIcon />
-            </IconButton>
-          </div>
-        </div>
-      </header>
+    
+     
       <div className="h-screen scroll-smooth bg-herobg z-1">
         <div className={`p-0  h-screen bg-cover bg-bottom ${style.heroheader}`}>
           <section data-aos="fade-up" className="text-white body-font">
@@ -85,7 +37,7 @@ export default function Home() {
                   and individuals to improve their business.
                 </p>
                 <div className="flex justify-center">
-                  <Link href="/services">
+                  <Link href="/about">
                     <a className="inline-flex text-white outline border-0 py-1 px-8 hover:bg-white hover:text-secondary uppercase rounded text-lg">
                       Get started
                     </a>
@@ -111,7 +63,7 @@ export default function Home() {
 
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start text-left mb-16 md:mb-0 md:ml-24 items-start">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start text-left mb-16 md:mb-0 md:ml-24 items-start " data-aos="fade-up">
             <div className="flex">
               <AutoAwesomeMotionIcon className="text-herobg" />
               <h5 className="ml-4 mb-4 text-herobg font-bold">About Us</h5>
@@ -146,7 +98,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="md:w-1/2">
+          <div className="md:w-1/2"  data-aos="zoom-in">
             <Image
               className=" object-center rounded"
               alt="about"
@@ -386,44 +338,42 @@ export default function Home() {
         <div className="container px-5 md:px-24 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h5 className="sm:text-3xl text-2xl md:text-lg font-bold title-font mb-4 text-gray-900">
-            <AutoAwesomeMotionIcon className="text-herobg" /> Our Project
+              <AutoAwesomeMotionIcon className="text-herobg" /> Our Project
             </h5>
             <h1 className="lg:w-2/3 mx-auto font-medium md:font-bold text-3xl leading-relaxed ">
-            Recently Launched Projects
+              Recently Launched Projects
             </h1>
           </div>
           <div className="flex flex-col md:flex-row md:justify-between sm:-m-4 -mx-4 -mb-10 md:mt-16 mt-14 md:space-y-0 space-y-6 m-24">
             <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10">
               <Image
-              alt=""
-              className="object-center object-rounded"
-              src="/img/happy.jpg" 
+                alt=""
+                className="object-center object-rounded"
+                src="/img/happy.jpg"
                 width={700}
                 height={600}
               />
-                
             </div>
             <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out p-4 md:w-1/3 flex flex-col text-center items-center md:mr-10">
               <Image
-              alt=""
-              className="object-center object-rounded"
-              src="/img/techtribe.jpg" 
+                alt=""
+                className="object-center object-rounded"
+                src="/img/techtribe.jpg"
                 width={700}
                 height={600}
               />
             </div>
-            
+
             <div className="hover:scale-175 transition delay-150 duration-300 ease-in-out  p-4 md:w-1/3 flex flex-col text-center items-center">
-              
-            <Image
-            alt=""
-              className="object-center object-rounded"
-              src="/img/hepss.jpg" 
+              <Image
+                alt=""
+                className="object-center object-rounded"
+                src="/img/hepss.jpg"
                 width={700}
                 height={600}
               />
             </div>
-          </div> 
+          </div>
         </div>
       </section>
     </>
